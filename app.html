@@ -1670,17 +1670,19 @@
           const card = document.createElement("div");
           card.className = "card";
           const meetingHtml = c.meeting
-            ? `<div class="meeting" style="margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--text);">📅 Meeting: ${escapeHtml(c.meeting)}</div>`
+            ? `<span>📅 ${escapeHtml(c.meeting)}</span>`
             : "";
           const linkHtml = c.link
-            ? `<div class="link" style="margin-top: 4px; font-size: 13px;"><a href="${escapeHtml(c.link)}" target="_blank" style="color: var(--theme-orange); text-decoration: none;">🔗 Company Website</a></div>`
+            ? `<span><a href="${escapeHtml(c.link)}" target="_blank" style="color: var(--theme-orange); text-decoration: none;">🔗 Website</a></span>`
+            : "";
+          const metaHtml = (c.meeting || c.link)
+            ? `<div style="margin-top: 12px; display: flex; gap: 16px; font-size: 12px; color: var(--text-secondary); align-items: center; flex-wrap: wrap;">${meetingHtml}${linkHtml}</div>`
             : "";
           card.innerHTML = `
       <h3>${escapeHtml(c.name)}</h3>
       <p>${escapeHtml(c.intro)}</p>
-      ${meetingHtml}
-      ${linkHtml}
       <div class="why">${escapeHtml(c.why)}</div>
+      ${metaHtml}
     `;
           holder.appendChild(card);
         }
