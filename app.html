@@ -1783,21 +1783,21 @@
 
           card.innerHTML = `
       <h3>${escapeHtml(c.name)}</h3>
-      <p style="font-weight: 600; color: var(--theme-orange);">${escapeHtml(c.description)}</p>
+      <p style="font-weight: 600; color: var(--text);">${escapeHtml(c.description)}</p>
       <p>${escapeHtml(c.history)}</p>
       
       <div style="margin-top: 14px;">
-        <strong style="font-size: 13px; color: var(--text);">🏢 Companies Meeting Here:</strong>
+        <strong style="font-size: 13px; color: var(--text);">Companies Meeting Here:</strong>
         ${listToHtml(c.companies)}
       </div>
       
       <div style="margin-top: 10px;">
-        <strong style="font-size: 13px; color: var(--text);">🗺️ Top Attractions:</strong>
+        <strong style="font-size: 13px; color: var(--text);">Top Attractions:</strong>
         ${listToHtml(c.attractions)}
       </div>
       
-      <div class="why" style="margin-top: 12px; background: rgba(0,0,0,.15); border: 1px solid var(--hair);">
-        <strong style="font-size: 13px; color: var(--text);">💡 General Tips:</strong>
+      <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--hair);">
+        <strong style="font-size: 13px; color: var(--text);">General Tips:</strong>
         ${listToHtml(c.tips)}
       </div>
     `;
