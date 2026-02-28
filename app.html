@@ -36,7 +36,7 @@ const CONFIG = {
       searchPlaceholder: "Search (city, company, flight…)",
     },
     companies: {
-      title: "Company Insights",
+      title: "Companies",
       searchPlaceholder: "Search",
     },
     cities: {
@@ -1422,6 +1422,9 @@ const CONFIG = {
         background: rgba(0, 0, 0, 0.12);
         box-shadow: 0 4px 16px rgba(255, 98, 0, 0.1);
       }
+      [data-theme="light"] .day:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
       .dayTop {
         display: flex;
         gap: 12px;
@@ -1586,6 +1589,9 @@ const CONFIG = {
         background: rgba(0, 0, 0, 0.12);
         box-shadow: 0 8px 24px rgba(255, 98, 0, 0.12);
         transform: translateY(-2px);
+      }
+      [data-theme="light"] .card:hover {
+        background: rgba(255, 255, 255, 0.8);
       }
       .card.sg-theme:hover {
         border-color: rgba(235, 87, 87, 0.3);
