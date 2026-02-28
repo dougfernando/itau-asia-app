@@ -13,67 +13,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Asia Trip" />
     <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iI0ZGNjIwMCIgcng9IjExMiIgLz4KICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGRkZGRkYiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgbGV0dGVyLXNwYWNpbmc9Ii01Ij5BVDwvdGV4dD4KPC9zdmc+" />
-      <div class="tabs" role="tablist" aria-label="Sections">
-        <div class="seg">
-          <button
-            role="tab"
-            aria-selected="true"
-            aria-controls="tab-itinerary"
-            id="btn-itinerary"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M7 2v2H5a2 2 0 0 0-2 2v2h18V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm14 8H3v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10Z"
-              />
-            </svg>
-            <span id="tabItineraryLabel"></span>
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="tab-companies"
-            id="btn-companies"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
-              />
-            </svg>
-            <span id="tabCompaniesLabel"></span>
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="tab-cities"
-            id="btn-cities"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-              />
-            </svg>
-            <span id="tabCitiesLabel"></span>
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="tab-logistics"
-            id="btn-logistics"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9L2 14v2l8-2.5V19l-2 1.5V22l3-1 3 1v-1.5L13 19v-5.5L21 16Z"
-              />
-            </svg>
-            <span id="tabLogisticsLabel"></span>
-          </button>
-        </div>
-      </div>
-
     <script>
       // ============================================================================
       // CONTENT CONFIGURATION - Edit all content here without changing code
@@ -1319,7 +1258,7 @@ const CONFIG = {
         align-items: center;
         justify-content: center;
         gap: 4px;
-        font-size: 11px;
+        font-size: 12px;
         transition: all 0.2s ease;
         cursor: pointer;
         flex: 1;
