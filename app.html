@@ -1230,11 +1230,13 @@ const CONFIG = {
         background: transparent;
         border: none;
         position: static;
+        width: 100%;
+        overflow: hidden;
       }
       .seg {
         display: flex;
-        gap: 6px;
-        padding: 0;
+        gap: 8px;
+        padding: 4px 2px;
         border-radius: 0;
         background: transparent;
         border: none;
@@ -1242,6 +1244,13 @@ const CONFIG = {
         justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+      }
+      .seg::-webkit-scrollbar {
+        display: none; /* Chrome/Safari/Webkit */
       }
       .seg button {
         appearance: none;
@@ -1354,11 +1363,22 @@ const CONFIG = {
       /* Filters */
       .filters {
         display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
+        flex-wrap: nowrap;
+        gap: 8px;
         margin-bottom: 14px;
+        padding-bottom: 6px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+      }
+      .filters::-webkit-scrollbar {
+        display: none; /* Chrome/Safari/Webkit */
       }
       .pill {
+        flex-shrink: 0;
+        white-space: nowrap;
         padding: 6px 10px;
         border-radius: 999px;
         border: 1px solid var(--hair);
