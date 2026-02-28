@@ -1090,72 +1090,73 @@ const CONFIG = {
       /* Hero Section */
       .hero {
         position: relative;
-        border-radius: 28px;
-        padding: 28px;
+        border-radius: 20px;
+        padding: 16px 20px;
         background:
           linear-gradient(
             135deg,
-            rgba(255, 98, 0, 0.12),
-            rgba(255, 152, 0, 0.06)
+            rgba(255, 98, 0, 0.08),
+            rgba(255, 152, 0, 0.04)
           ),
           linear-gradient(
             180deg,
-            rgba(255, 255, 255, 0.07),
-            rgba(255, 255, 255, 0.02)
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.01)
           );
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-sm);
         overflow: hidden;
         border: 1px solid var(--hair);
       }
       .toprow {
         display: flex;
         align-items: center;
-        gap: 20px;
-        justify-content: center;
+        gap: 16px;
+        justify-content: space-between;
         position: relative;
       }
       .brand {
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: row;
+        gap: 20px;
         min-width: 0;
         flex: 1;
         align-items: center;
-        text-align: center;
+        text-align: left;
       }
       .logos {
         display: flex;
-        gap: 24px;
+        gap: 16px;
         align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
       }
       .logos .l {
-        height: 36px;
+        height: 28px;
         display: inline-flex;
         align-items: center;
         filter: brightness(1.1);
       }
       .logos svg {
-        height: 36px;
+        height: 28px;
         width: auto;
       }
       .title {
-        text-align: center;
+        text-align: left;
+        border-left: 1px solid var(--hair);
+        padding-left: 20px;
       }
       .title h1 {
         margin: 0;
-        font-size: 32px;
+        font-size: 20px;
         font-weight: 700;
-        letter-spacing: -0.5px;
-        line-height: 1.2;
+        letter-spacing: -0.3px;
+        line-height: 1.1;
       }
       .title .sub {
-        margin-top: 6px;
+        margin-top: 2px;
         color: var(--text-secondary);
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
-        letter-spacing: 0.3px;
+        letter-spacing: 0.1px;
       }
       .actions {
         position: absolute;
@@ -1669,30 +1670,32 @@ const CONFIG = {
       /* Responsive */
       @media (max-width: 768px) {
         .wrap {
-          padding: 16px 14px 40px;
+          padding: 12px 12px 40px;
         }
         .hero {
-          padding: 20px;
+          padding: 12px 16px;
+          border-radius: 16px;
         }
-        .toprow {
-          flex-direction: column;
+        .brand {
           gap: 12px;
-        }
-        .title h1 {
-          font-size: 24px;
         }
         .logos {
-          gap: 12px;
+          gap: 10px;
         }
-        .logos .l {
-          height: 28px;
+        .logos .l, .logos svg {
+          height: 24px;
         }
-        .logos svg {
-          height: 28px;
+        .title {
+          padding-left: 12px;
         }
-        .actions {
-          width: 100%;
-          margin-left: 0;
+        .title h1 {
+          font-size: 16px;
+        }
+        .title .sub {
+          font-size: 11px;
+        }
+        .heroArt {
+          display: none;
         }
       }
     </style>
